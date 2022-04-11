@@ -1,0 +1,93 @@
+.WeatherApp__contents .WeatherApp__contents-container {
+    display: flex;
+    font-size: 1.1rem;
+}
+
+/* =============== figure ===============*/
+
+.WeatherApp__contents .WeatherApp__contents-container figure {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.WeatherApp__contents .WeatherApp__contents-container figure img {
+    width: 100px;
+}
+
+.WeatherApp__contents .WeatherApp__contents-container figure figcaption {
+    color: #fff;
+    font-weight: bold;
+}
+
+.WeatherApp__contents .WeatherApp__contents-container figure figcaption p+p {
+    margin-top: 10px;
+}
+
+.WeatherApp__contents .WeatherApp__contents-container figure figcaption p strong {
+    margin-left: 10px;
+}
+
+/* =============== temperature ===============*/
+
+.WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    width: 250px;
+
+}
+
+.WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div p+p {
+    margin-top: 15px;
+}
+
+.WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div p span {
+    margin-right: 20px;
+}
+
+.WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div p strong {
+    margin-left: 20px;
+}
+
+.WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div+div {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .WeatherApp__contents .WeatherApp__contents-container {
+        flex-direction: column;
+    }
+
+    /* =============== temperature ===============*/
+
+    .WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div+div {
+        margin-left: 0;
+
+    }
+}

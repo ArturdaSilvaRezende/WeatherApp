@@ -1,0 +1,35 @@
+.WeatherApp__date {
+
+    padding: 30px;
+    border-radius: 7px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+
+}
+
+.WeatherApp__date .Weather__date-content h2 {
+    font-size: 4rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.WeatherApp__date .Weather__date-content p {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.WeatherApp__date .WeatherApp__date-hour {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 767px) {
+    .WeatherApp__date .Weather__date-content h2 {
+        font-size: 3rem;
+    }
+
+    .WeatherApp__date .Weather__date-content p {
+        margin: 20px 0;
+    }
+}

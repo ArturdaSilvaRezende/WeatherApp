@@ -1,0 +1,58 @@
+.WeatherApp .WeatherApp__container {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-areas:
+        "hour form"
+        "content content";
+    justify-content: center;
+    place-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.WeatherApp__date {
+    grid-area: hour;
+    background: #019498;
+    background: linear-gradient(to bottom right, #019498, #28AAC4);
+}
+
+.WeatherApp__form {
+    grid-area: form;
+    background: #019498;
+    background: linear-gradient(to bottom right, #019498, #28AAC4);
+}
+
+.WeatherApp__contents {
+    grid-area: content;
+    width: 100%;
+    background: #019498;
+    background: linear-gradient(to bottom right, #019498, #28AAC4);
+    padding: 30px;
+    border-radius: 7px;
+    margin-top: -40px;
+}
+
+@media screen and (max-width: 767px) {
+    .WeatherApp .WeatherApp__container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "hour"
+            "form"
+            "content";
+        width: 100%;
+    }
+
+    .WeatherApp .WeatherApp__container .WeatherApp__contents {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .WeatherApp .WeatherApp__container {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
