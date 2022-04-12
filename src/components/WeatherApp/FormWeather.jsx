@@ -8,7 +8,7 @@ const FormWeather = (props) => {
   return (
     <div className="WeatherApp__form">
       <label className="WeatherApp__form-label" htmlFor="location-name">
-        Enter Location :
+        Enter a country, state or city :
       </label>
 
       <div className="WeatherApp__forms-contents">

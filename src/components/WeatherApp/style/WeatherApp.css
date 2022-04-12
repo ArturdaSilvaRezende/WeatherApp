@@ -13,21 +13,18 @@
 
 .WeatherApp__date {
     grid-area: hour;
-    background: #019498;
-    background: linear-gradient(to bottom right, #019498, #28AAC4);
+    background-color: #fff;
 }
 
 .WeatherApp__form {
     grid-area: form;
-    background: #019498;
-    background: linear-gradient(to bottom right, #019498, #28AAC4);
+    background-color: #fff;
 }
 
 .WeatherApp__contents {
     grid-area: content;
     width: 100%;
-    background: #019498;
-    background: linear-gradient(to bottom right, #019498, #28AAC4);
+    background-color: #fff;
     padding: 30px;
     border-radius: 7px;
     margin-top: -40px;

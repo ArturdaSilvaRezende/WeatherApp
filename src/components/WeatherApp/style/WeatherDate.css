@@ -4,13 +4,12 @@
     border-radius: 7px;
     width: 100%;
     text-align: center;
-    color: #fff;
+    color: #494646;
 
 }
 
 .WeatherApp__date .Weather__date-content h2 {
     font-size: 4rem;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .WeatherApp__date .Weather__date-content p {

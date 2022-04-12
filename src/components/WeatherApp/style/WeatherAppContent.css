@@ -6,7 +6,7 @@
 /* =============== figure ===============*/
 
 .WeatherApp__contents .WeatherApp__contents-container figure {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(53, 135, 155, 0.638);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -42,13 +42,14 @@
 }
 
 .WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(53, 135, 155, 0.638);
     border-radius: 7px;
     align-items: center;
     color: #fff;
     font-weight: bold;
     padding: 20px;
     width: 250px;
+    text-align: center;
 
 }
 
@@ -57,11 +58,11 @@
 }
 
 .WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div p span {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div p strong {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div+div {
@@ -82,7 +83,6 @@
 
     .WeatherApp__contents .WeatherApp__contents-container .WeatherApp__contents-temperature div {
         width: 100%;
-        text-align: center;
         margin-top: 20px;
     }
 

@@ -3,6 +3,9 @@ import React from "react";
 //custom style
 import "./style/WeatherDate.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClockFour } from "@fortawesome/free-solid-svg-icons";
+
 const DateWeather = (props) => {
   const months = {
     0: "January",
@@ -19,7 +22,15 @@ const DateWeather = (props) => {
     11: "December",
   };
 
-  const days = ["Sun", "Monday", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   const d = new Date();
   const year = d.getFullYear();
   const date = d.getDate();
@@ -38,7 +49,8 @@ const DateWeather = (props) => {
       </div>
 
       <p className="WeatherApp__date-hour">
-        Current time: {new Date().toLocaleTimeString()}
+        <FontAwesomeIcon icon={faClockFour} /> Current time:{" "}
+        {new Date().toLocaleTimeString()}
       </p>
     </div>
   );
